@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Go Fish</title>
+
+<link href="stylesheet.css" rel="stylesheet">
+
+<link rel="icon" href="images/fbowl.gif" type="image/gif" sizes="16x16">
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+</head>
+
+<body class="bkgd">
+
+<div>
+
+<header><h1 class="head"><a href="index.html">Go&nbsp;Fish<br>Menu</a></h1></header>
+
+<nav>
+
+<dl>
+
+<dd><a href="about.html">About Us</a></dd>
+
+<dd><a href="menu.html">Menu</a></dd>
+
+<dd><a href="specials.html">Specials</a></dd>
+
+<dd><a href="contact.html">Contact</a></dd>
+
+</dl>
+
+</nav>
+
+<main>
+
+<h2>Menu</h2>
+
+<body>
+
+<div class="slideshow-container">
+
+  	<div class="mySlides fade">
+    	<div class="numbertext"></div>
+    	<img src="images/sushi.jpg" style="width:100%">
+    	<div class="text">Sushi</div>
+  </div>
+
+  	<div class="mySlides fade">
+    	<div class="numbertext"></div>
+    	<img src="images/fishplate.jpg" style="width:100%">
+    	<div class="text">Bring Your Own Fish!</div>
+  </div>
+
+	<div class="mySlides fade">
+    	<div class="numbertext"></div>
+    	<img src="images/dailyCatch.jpeg" style="width:100%">
+    	<div class="text">Catch of the Day</div>
+  </div>
+  
+    	<div class="mySlides fade">
+    	<div class="numbertext"></div>
+    	<img src="images/lobster.jpg" style="width:100%">
+    	<div class="text">Lobster anyone??</div>
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<p class="list">Whether you want our fish or your own, or just want to come in for the sights,<br>We have what you're looking for</p>
+
+	<div class="list">
+
+	<h2>Happy Hour</h2>
+	
+		<h4 class="p1">Monday &mdash; Friday</h4>
+		<p>9:00am &amp; 5pm</p>
+		<h4>Catch of the day and Daily Specials</h4>
+
+	<p class="heavy">Saturday</p>
+	
+	<p>Deep Sea Trials</p>
+	
+	<h4 class="p1">Sunday</h4>
+
+	<p>Lazy lobster Sunday</p>
+
+
+</main>
+<footer>	
+                    <div class="list">
+                    Copyright &copy; Go Fish<br>
+	<a href="mailto:email.gofish@hotmail.com"><i class=""></i>emailus@gofish.com</a></span>
+
+</footer>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
